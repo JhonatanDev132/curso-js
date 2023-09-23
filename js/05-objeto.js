@@ -32,3 +32,24 @@ console.log( cliente.telefone[1] );
 // Acessando uma propriedade que também é um objeto
 console.log( cliente.medidas.altura );
 
+
+// Exemplo 3: Array de objetos
+let livros = [
+    {
+        titulo: "Jujutsu Kaisen",
+        autor: "Gege Akutami",
+        quantidade: 23
+    },
+    {
+        titulo: "Harry Potter",
+        autor: "J.K Rowling",
+        quantidade: 7
+    },
+    {
+        titulo: "Five nights at freddy's",
+        autor: "Scott Cawton",
+        quantidade: 3
+    }
+]
+
+console.log(`${livros[0].titulo} (escrito por ${livros[0].autor})`);
