@@ -19,7 +19,7 @@ let cliente = {
     telefone: ["4002-8922", "11 90218-0321"],
     medidas: {
         peso: 75,
-        altura: 1.74
+        altura: 1.74,
     }
 };
 
