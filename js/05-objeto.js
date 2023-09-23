@@ -31,3 +31,4 @@ console.log( cliente.telefone[1] );
 
 // Acessando uma propriedade que também é um objeto
 console.log( cliente.medidas.altura );
+
