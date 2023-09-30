@@ -77,5 +77,13 @@ if (media >= mediaMinima && faltas <= limiteDeFaltas) {
 - Nenhuma das condições anteriores? Ótimo */
 
 if(media < 3){
-    console.log("Péssimo")
+    console.log("Péssimo");
+} else if (media < 5) {
+    console.log("Ruim");
+} else if (media < 7) {
+    console.log("Regular");
+} else if (media < 9){
+    console.log("Bom");
+} else {
+    console.log("Ótimo");                                                                                        
 }
