@@ -28,11 +28,14 @@
 
 let aluno = "Bueno";
 
-let nota1 = prompt(`Primeira nota: `);
-let nota2 = prompt(`Segunda nota: `);
+// let nota1 = prompt(`Primeira nota: `);
+// let nota2 = prompt(`Segunda nota: `);
 
-let n1 = parseFloat(nota1); 
-let n2 = parseFloat(nota2);
+// let n1 = parseFloat(nota1); 
+// let n2 = parseFloat(nota2);
+
+let n1 = 8;
+let n2 = 10;
 
 let media = (n1 + n2) / 2;
 let faltas = 9;
@@ -42,8 +45,8 @@ const limiteDeFaltas = 10;
 
 let resultado
 
-console.log(nota1);
-console.log(nota2);
+console.log(n1);
+console.log(n2);
 console.log(media);
 console.log(resultado);
 
