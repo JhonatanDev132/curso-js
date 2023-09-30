@@ -16,17 +16,18 @@ while (contador <= 5) {
     contador++;
 }
 
-// Exemplo 2: Do While
+// Exemplo 2: loop do/while alert
 
-let contador2 = 1;
+// let contador4 = 1;
 
-do {
-    console.log(contador2);
-    contador2++;
-} while (contador2 <= 5);
+// do {
+//     console.log(contador4);
+//     contador4++;
+// } while (contador4 <= 5);
 
-// Exemplo 3: For
+// Exemplo 3: loop for
 
-for (let contador3 = 1; contador3 <= 5; contador3++) {
-    console.log(contador3);
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
 }
+
