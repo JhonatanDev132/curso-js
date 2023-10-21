@@ -6,7 +6,13 @@
 <title>DOM</title>
 <style>
     img { max-width: 100%; }
-    figure { margin: 0; }    
+    figure { margin: 0; }
+    
+    .destaque{
+        background-color: salmon;
+        padding: 4px;
+        border-radius: 4px;
+    }
 </style>
 </head>
 
@@ -21,7 +27,7 @@
             target="_blank">
             <img src="https://raw.githubusercontent.com/braziljs/eloquente-javascript/master/img/html-tree.jpg" alt="">
         </a>
-        <figcaption>Representação do DOM</figcaption>
+        <figcaption id="legenda">Representação do DOM</figcaption>
     </figure>
 
     <p>O DOM possui métodos que permitem acesso à árvore, para que eles possam alterar a estrutura, estilo e conteúdo do
@@ -29,23 +35,30 @@
 
     <hr>
     
-    <h2>Sobre linguagens Front-End</h2>
+    <h2 id="sobre">Sobre linguagens Front-End</h2>
     <p>Usamos HTML para estruturar e CSS para estilizar.</p>
     <p>JavaScript é uma linguagem de programação para projetos web.</p>
     
     
-    <h2>Back-End</h2>
+    <h2 class="back">Back-End</h2>
     <p>Área de desenvolvimento com tecnologias de servidor.</p>
     <p>Neste segmento você trabalha com bancos de dados e linguagens como PHP, Python, Java e até mesmo JavaScript.</p>
 
+    <div class="editores">
     <h2>Editores de código</h2>
-    
+
+    <!-- 
+        O conteúdo desta lista será 
+        gerado através de programação 
+    -->
+    <ul class="lista"></ul>
+    </div>
     
     <hr>
 
     <h2>Referências</h2>
 
-    <ul>
+    <ul class="referencias">
         <li><a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/13-document-object-model.md">O Document Object Model</a> </li>
         <li><a href="https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM">Modelo de Objeto de Documento (DOM)</a></li>
         <li><a href="https://tableless.com.br/entendendo-o-dom-document-object-model/">Entendendo o DOM</a></li>
