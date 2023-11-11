@@ -4,7 +4,8 @@ const pagina = document.querySelector("body");
 const formulario = document.querySelector("form");
 const campoPalpite = document.querySelector("#palpite");
 const resultado = document.querySelector("#resultado");
-const imagem = document.getElementById("#imagem");
+const imagem = document.getElementById("imagem");
+let body = document.querySelector("body");
 let fausto = "imagens/faustao.gif";
 let miseravi = "imagens/miseravi.gif";
 
@@ -29,14 +30,18 @@ formulario.addEventListener("submit", function(event){
     if( palpite == numeroAleatorio ){
         resultado.textContent = "Acertou miseravii!!🤣🤣";
         resultado.style.color = "blue";
-        imagem = fausto;
+        imagem.src = fausto;
+        body.style.transition = "background-color 1s";
+        body.style.backgroundColor = "#0062ff";
 
         // Redirecionamento usando "location"
         // location = "http://www.sp.senac.br";
     } else {
         resultado.textContent = "Errooouuuu!😜😜";
-        resultado.style.backgroundColor = "red";
-        
+        resultado.style.color = "red";
+        imagem.src = miseravi;
+        body.style.transition = "background-color 1s";
+        body.style.backgroundColor = "#ffb300";   
 
     }
 })

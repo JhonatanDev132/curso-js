@@ -5,9 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jogo da Advinhação</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 <style>
-body { font-family: 'Segoe UI', Verdana; }
+body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(28, 50, 64);
+    }
 
 .container {
     width: 80%;
@@ -17,6 +21,8 @@ body { font-family: 'Segoe UI', Verdana; }
     border: solid 1px;
     text-align: center;
     background-color: white;
+    position: relative;
+    top: 15rem;
 }
 
 form {
@@ -24,6 +30,15 @@ form {
     background-color: #ccc;
     width: 80%;
     margin: auto;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgb(60, 190, 241);
 }
 
 input {
@@ -37,7 +52,7 @@ input {
 </head>
 <body>
     <div class="container">
-        <h1>Jogo da Adivinhação </h1>
+        <h1 class="animate__animated animate__pulse">Jogo da Adivinhação </h1>
         <p>Tente advinhar o número que o computador escolheu.</p>
     
         <form action="" method="post">
