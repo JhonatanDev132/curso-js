@@ -29,17 +29,19 @@ formulario.addEventListener("submit", function(event){
     // Comparando o palpite com o numero aleatorio do computador
     if( palpite == numeroAleatorio ){
         resultado.textContent = "Acertou miseravii!!🤣🤣";
+        resultado.style.animation = "flip 1s";
         resultado.style.color = "blue";
-        imagem.src = fausto;
-        body.style.transition = "background-color 1s";
+        imagem.src =  miseravi;
+        body.style.transition = "background-color 2 s";
         body.style.backgroundColor = "#0062ff";
 
         // Redirecionamento usando "location"
         // location = "http://www.sp.senac.br";
     } else {
         resultado.textContent = "Errooouuuu!😜😜";
+        resultado.style.animation = "rotateInDownLeft 3s"
         resultado.style.color = "red";
-        imagem.src = miseravi;
+        imagem.src = fausto;
         body.style.transition = "background-color 1s";
         body.style.backgroundColor = "#ffb300";   
 
