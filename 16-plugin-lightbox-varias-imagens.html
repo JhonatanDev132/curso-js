@@ -50,13 +50,49 @@
 
       <!-- Estrutura da Galeria -->
       <div class="galeria">
-        <a href="imagens/apple.jpg" data-lightbox="fotos" data-title="Apple">
+        <a href="imagens/apple.jpg">
           <img src="imagens/mini-apple.jpg" alt="" />
         </a>
-        <a href="imagens/ibm.jpg" data-lightbox="fotos" data-tittle="Ibm">
+        <a href="imagens/ibm.jpg"></a>
           <img src="imagens/mini-ibm.jpg" alt="" />
         </a>
-        <a href="imagens/microsoft.jpg" data-lightbox="fotos" data-tittle="Microsoft">
+        <a href="imagens/microsoft.jpg">
+          <img src="imagens/mini-microsoft.jpg" alt="" />
+        </a>
+        <a href="imagens/apple.jpg">
+          <img src="imagens/mini-apple.jpg" alt="" />
+        </a>
+        <a href="imagens/ibm.jpg"></a>
+          <img src="imagens/mini-ibm.jpg" alt="" />
+        </a>
+        <a href="imagens/microsoft.jpg">
+          <img src="imagens/mini-microsoft.jpg" alt="" />
+        </a>
+        <a href="imagens/apple.jpg">
+          <img src="imagens/mini-apple.jpg" alt="" />
+        </a>
+        <a href="imagens/ibm.jpg"></a>
+          <img src="imagens/mini-ibm.jpg" alt="" />
+        </a>
+        <a href="imagens/microsoft.jpg">
+          <img src="imagens/mini-microsoft.jpg" alt="" />
+        </a>
+        <a href="imagens/apple.jpg">
+          <img src="imagens/mini-apple.jpg" alt="" />
+        </a>
+        <a href="imagens/ibm.jpg"></a>
+          <img src="imagens/mini-ibm.jpg" alt="" />
+        </a>
+        <a href="imagens/microsoft.jpg">
+          <img src="imagens/mini-microsoft.jpg" alt="" />
+        </a>
+        <a href="imagens/apple.jpg">
+          <img src="imagens/mini-apple.jpg" alt="" />
+        </a>
+        <a href="imagens/ibm.jpg"></a>
+          <img src="imagens/mini-ibm.jpg" alt="" />
+        </a>
+        <a href="imagens/microsoft.jpg">
           <img src="imagens/mini-microsoft.jpg" alt="" />
         </a>
       </div>
@@ -72,6 +108,11 @@
     <script src="lightbox/js/lightbox.min.js"></script>
 
     <script>
+        const links = document.querySelectorAll(".galeria a");
+        for( const link of links){
+            link.setAttribute("data-lightbox", "fotos");
+        }
+
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
