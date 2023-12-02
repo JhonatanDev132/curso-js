@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jQuery - Plugin Slick</title>
 
+<link rel="stylesheet" href="slick/slick.css" />
+<link rel="stylesheet" href="slick/slick-theme.css" />
+
 <style>
 * { box-sizing: border-box;  }
 html { font-size: 14px; }
@@ -27,20 +30,77 @@ img { max-width: 100%; }
 .slider section { margin-bottom: 20px; }
 
 .slider h2, .slider p { margin: 0; }
+
+.voltar, .avancar {
+    position: absolute;
+    bottom: 80px;
+    height: 100px;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.voltar {
+    left: 0;
+}
+
+.avancar {
+    right: 0;
+    width: 6.5%;
+}
 </style>
 </head>
 
 <body>
 
     <div class="container">
-        <h1>jQuery - Plugin de Carousel/Slider de conteúdo</h1>
-        <hr>
-        <p>Referência: <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick</a></p>
 
-        <!-- Estrutura do Slider/Carousel -->   
-        
+    <h1>jQuery - Plugin de Galeria de Fotos</h1>
+    <hr />
+         <!-- Estrutura slider -->
+      <div class="slider">
+        <div>
+          <img  src="imagens/dedos.jpg" alt="">
+          <h2>Olha que dedinhos legais</h2>
+          <p>Qualquer coisa sobre os dedos... </p>
+        </div>
+
+        <div>
+          <img src="imagens/ideias.jpg" alt="">
+          <h2>Olha a lâmpada</h2>
+          <p>Qualquer coisa de lâmpada</p>
+        </div>
+
+        <div>
+          <img src="imagens/pacoca.jpg" alt="">
+          <h2>Isso é bom</h2>
+          <p>Paçoca é bom demais papai</p>
+        </div>
+      </div>
     </div>
 
+    </div>
+
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $('.slider').slick({
+            arrows: true,
+            // dots: true,
+            prevArrow: "<a class='voltar' href=''>Voltar</a>",
+            nextArrow: "<a class='avancar' href=''>Avançar</a>",
+            autoplay: true,
+            autoplaySpeed: 4200
+        });
+    </script>
 
 </body>
 
